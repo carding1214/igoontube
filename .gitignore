@@ -1,0 +1,11 @@
+.superpowers/
+.worktrees/
+/ffmpeg.exe
+work/
+data/
+.tools/
+.packages/
+.dotnet-home/
+vendor/
+bin/
+obj/

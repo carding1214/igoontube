@@ -1,0 +1,20 @@
+IgoonTube 1.0
+
+English is the default language. Open Settings to choose Spanish, a color preset, accent, button radius, height and density. Changes apply to every IgoonTube window.
+
+- Open a local media file with IgoonTube.exe; each launch creates a real independent window.
+- Drop a second video into a window for a side-by-side or stacked layout.
+- Each video has independent playback, timeline, volume up to 200%, audio, zoom, crop, rotation, mirror, tracking, favorites and clips.
+- Original audio is the default. AI voice/detail processing is local and caches only compact Opus audio beside the video when possible.
+- Cache and thumbnails can be inspected and deleted without removing favorites.
+- Double-click the video for real fullscreen; press Escape to leave it.
+- Ctrl+Shift+M activates privacy mode.
+- Playback and processing do not use the internet.
+
+This free release is unsigned. Windows SmartScreen may show a warning; verify SHA256SUMS.txt before running it. Spanish is available in Settings.
+
+Two editions are available:
+- IgoonTube Full includes local AI audio, scene analysis and subject tracking.
+- IgoonTube NoAI is smaller and excludes Python, AI models and AI-only controls.
+
+Both editions can be installed together and keep all non-AI playback tools.

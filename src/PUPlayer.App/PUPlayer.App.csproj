@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>IgoonTube</AssemblyName>
+    <RootNamespace>PUPlayer.App</RootNamespace>
+    <ApplicationIcon>Assets\IgoonTube.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\IgoonTube.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <ProjectReference Include="..\PUPlayer.MpvWorker\PUPlayer.MpvWorker.csproj" ReferenceOutputAssembly="false" />
+    <None Include="..\..\vendor\mpv\libmpv-2.dll" Link="libmpv-2.dll" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\ffmpeg.exe" Link="ffmpeg.exe" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PUPlayer.Core\PUPlayer.Core.csproj" />
+  </ItemGroup>
+
+  <Target Name="CopyMpvWorker" AfterTargets="Build">
+    <ItemGroup>
+      <WorkerFiles Include="..\PUPlayer.MpvWorker\bin\$(Configuration)\net8.0\win-x64\PUPlayer.MpvWorker.exe" />
+      <WorkerFiles Include="..\PUPlayer.MpvWorker\bin\$(Configuration)\net8.0\win-x64\PUPlayer.MpvWorker.dll" />
+      <WorkerFiles Include="..\PUPlayer.MpvWorker\bin\$(Configuration)\net8.0\win-x64\PUPlayer.MpvWorker.deps.json" />
+      <WorkerFiles Include="..\PUPlayer.MpvWorker\bin\$(Configuration)\net8.0\win-x64\PUPlayer.MpvWorker.runtimeconfig.json" />
+    </ItemGroup>
+    <Copy SourceFiles="@(WorkerFiles)" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+  </Target>
+
+</Project>

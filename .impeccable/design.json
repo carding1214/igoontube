@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-13T23:00:00-07:00",
+  "title": "Design System: PUPlayer",
+  "extensions": {
+    "colorMeta": {
+      "accent-warm": { "role": "primary", "displayName": "Señal cálida", "canonical": "#F09A50", "tonalRamp": ["#2B211A", "#61452F", "#D77D38", "#F09A50", "#FFAD68"] },
+      "canvas-black": { "role": "neutral", "displayName": "Carbón", "canonical": "#090A0C", "tonalRamp": ["#090A0C", "#14161A", "#1B1E23", "#24272D", "#31353D", "#3B3F47", "#B8BCC5", "#F5F6F8"] }
+    },
+    "typographyMeta": {
+      "body": { "displayName": "Interfaz", "purpose": "Controles, nombres y estado." },
+      "title": { "displayName": "Mensaje", "purpose": "Estados vacíos." }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": [{ "name": "minimum-window", "value": "720x420" }]
+  },
+  "components": [
+    {
+      "name": "Carbon Button",
+      "kind": "button",
+      "refersTo": "button-control",
+      "description": "Acción compacta con todos sus estados.",
+      "html": "<button class=\"ds-control\">Reproducir</button>",
+      "css": ".ds-control{min-height:34px;padding:6px 12px;border:1px solid #3B3F47;border-radius:8px;background:#24272D;color:#F5F6F8}.ds-control:hover{background:#31353D}.ds-control:focus-visible{outline:1px solid #F09A50}"
+    },
+    {
+      "name": "Player Header",
+      "kind": "custom",
+      "description": "Nombre recortable, escala y cierre por panel.",
+      "html": "<header class=\"ds-player-head\"><span>video.mp4</span><b>1.0x</b><button>×</button></header>",
+      "css": ".ds-player-head{height:42px;background:#14161A;color:#F5F6F8;display:flex;align-items:center;gap:8px;padding:0 7px;font:12px Segoe UI,sans-serif}.ds-player-head span{overflow:hidden;text-overflow:ellipsis}.ds-player-head b{color:#FFAD68}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Cabina de reproducción",
+    "overview": "Herramienta de operación donde el contenido domina y cada panel conserva controles independientes.",
+    "keyCharacteristics": ["Superficies carbón en capas.", "Controles compactos y redondeados.", "Ámbar reservado para interacción."],
+    "rules": [
+      { "name": "Quiet Chrome", "body": "El acento nunca compite con el video.", "section": "colors" },
+      { "name": "Tonal Depth", "body": "La profundidad proviene de capas y divisores, no sombras.", "section": "elevation" }
+    ],
+    "dos": ["Mantener el video dominante.", "Conservar controles por panel.", "Mostrar foco y tooltips."],
+    "donts": ["No revelar archivos privados.", "No usar tarjetas decorativas.", "No dominar con naranja."]
+  }
+}

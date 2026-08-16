@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1601C14C-234B-46C8-8ED4-99BD1CCBE976}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PUPlayer.Core", "src\PUPlayer.Core\PUPlayer.Core.csproj", "{9454480E-176A-446E-B0C0-3DCE5DC361FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PUPlayer.MpvWorker", "src\PUPlayer.MpvWorker\PUPlayer.MpvWorker.csproj", "{1A6D195A-8BEA-4217-BE6F-F49E73685B53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PUPlayer.App", "src\PUPlayer.App\PUPlayer.App.csproj", "{BCF9812A-F3CF-4A37-A8B5-3CEEEAD4911C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{718EAFCD-C417-49F5-B63A-F4BF4E37180A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PUPlayer.Core.Tests", "tests\PUPlayer.Core.Tests\PUPlayer.Core.Tests.csproj", "{3A077942-DD91-4E59-B60C-98CF85CED91C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PUPlayer.IntegrationTests", "tests\PUPlayer.IntegrationTests\PUPlayer.IntegrationTests.csproj", "{67654010-FA8B-42EE-B658-B80279CBD6D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9454480E-176A-446E-B0C0-3DCE5DC361FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9454480E-176A-446E-B0C0-3DCE5DC361FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9454480E-176A-446E-B0C0-3DCE5DC361FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9454480E-176A-446E-B0C0-3DCE5DC361FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A6D195A-8BEA-4217-BE6F-F49E73685B53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A6D195A-8BEA-4217-BE6F-F49E73685B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A6D195A-8BEA-4217-BE6F-F49E73685B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A6D195A-8BEA-4217-BE6F-F49E73685B53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCF9812A-F3CF-4A37-A8B5-3CEEEAD4911C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF9812A-F3CF-4A37-A8B5-3CEEEAD4911C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF9812A-F3CF-4A37-A8B5-3CEEEAD4911C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF9812A-F3CF-4A37-A8B5-3CEEEAD4911C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A077942-DD91-4E59-B60C-98CF85CED91C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A077942-DD91-4E59-B60C-98CF85CED91C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A077942-DD91-4E59-B60C-98CF85CED91C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A077942-DD91-4E59-B60C-98CF85CED91C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67654010-FA8B-42EE-B658-B80279CBD6D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67654010-FA8B-42EE-B658-B80279CBD6D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67654010-FA8B-42EE-B658-B80279CBD6D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67654010-FA8B-42EE-B658-B80279CBD6D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9454480E-176A-446E-B0C0-3DCE5DC361FE} = {1601C14C-234B-46C8-8ED4-99BD1CCBE976}
+		{1A6D195A-8BEA-4217-BE6F-F49E73685B53} = {1601C14C-234B-46C8-8ED4-99BD1CCBE976}
+		{BCF9812A-F3CF-4A37-A8B5-3CEEEAD4911C} = {1601C14C-234B-46C8-8ED4-99BD1CCBE976}
+		{3A077942-DD91-4E59-B60C-98CF85CED91C} = {718EAFCD-C417-49F5-B63A-F4BF4E37180A}
+		{67654010-FA8B-42EE-B658-B80279CBD6D9} = {718EAFCD-C417-49F5-B63A-F4BF4E37180A}
+	EndGlobalSection
+EndGlobal
